@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Makes the main content take up at least the full viewport height */
+    background-image: url('images/road.jpg');
+    background-size: cover;
+
+}
+
+header {
+    background-image: url('images/heartWall.webp'); /* Replace 'heartWall.jpg' with the actual image file name and path */
+    background-size: cover;
+    padding: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    color: white;
+    justify-content: space-between; /* Center the logo and buttons horizontally */
+    align-items: center; /* Vertically center the logo and buttons */
+}
+
+.logo{
+    text-align: center;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    flex-grow: 1; /* Allows the main content to expand and fill available space */
+}
+
+.quiz-start-screen{
+    margin-top: 30px;
+    border: 1px solid #ccc;
+    padding: 50px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%; 
+    background-image: url('images/road.jpg');
+    text-align: center; /* Center text horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center button horizontally */
+    justify-content: center; /* Center button vertically */
+    background-size: cover;
+
+}
+
+#start-header{
+    color:#fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.instruction-list {
+    list-style: none; /* Remove default list styles */
+    padding: 0;
+    margin-top: 40px;
+}
+
+.instruction-list li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+    text-align: left;
+    margin-bottom: 10px; /* Add spacing between items */
+}
+#start-button{
+    background-color: white;
+    font-family: cursive;
+    color: rgb(150, 21, 21);
+    padding: 15px 50px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+#start-button:hover{
+    color: white;
+    background-color: rgb(171, 39, 39);
+}
+
+#popup{
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.question-container {
+    margin-top: 30px;
+    border: 1px solid #ccc;
+    padding: 50px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%; 
+    background-image: url('images/road.jpg');
+    background-size: cover;
+    
+}
+
+
+#question-container{
+    display: none;
+}
+
+
+#question {
+    font-weight:5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-family: cursive;
+    font-size: 20px;
+    color: white;
+  
+}
+
+.options{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+}
+
+
+.option {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.option:hover {
+    background-color: #81c1d5;
+    color:black;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: #007acc;
+    color: #fff;
+}
+
+#prev-btn, #next-btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+#next-btn {
+    float: right;
+    margin: 20px;
+}
+
+#prev-btn, #next-btn:hover{
+    background-color: #657818;
+}
+
+#prev-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    margin: 20px;
+}
+
+.instructions {
+    margin-top: 20px;
+    font-family: cursive;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    color: red;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+   
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+
+#chart-text{
+    text-align: center;
+    color: #fff;
+    font-family: cursive;
+     background-color: #cc1a1a;
+    margin: 40px;
+    border-radius:10px;
+    padding: 5px;
+    display: inline-block;
+}
+#chart-text:hover{
+    color: #cc1a1a;
+    background-color: #fff;
+   
+}
+
+.chart-container{
+    text-align: center;
+}
+
+/*Insights */
+.insights-container{
+    margin-top: 30px;
+    border: 1px solid #ccc;
+    padding: 50px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%; 
+    
+
+}
+.insights-container h2{
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#insights-container{
+    font-weight:5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-family: cursive;
+    font-size: 20px;
+    color: rgb(234, 9, 9);
+}
+
+/*How to cure container*/
+#cure-container {
+    background-color: #f0f0f0; /* Background color */
+    padding: 50px; /* Add padding to create separation from the chart */
+    border: 1px solid #ccc; /* Add a border for a clean look */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center-align text and content */
+    font-family: 'Arial', sans-serif; /* Choose an appropriate font-family */
+    color: red;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+#headCure{
+    text-align: center;
+    color: #fff;
+    font-family: cursive;
+    background-color: #cc1a1a;
+    margin: 40px;
+    border-radius:10px;
+    padding: 5px;
+}
+
+/* Like box */
+.popup-container {
+    display: none;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heart-icon {
+    font-size: 18px;
+    cursor: pointer;
+    width: 60px; /* Adjust the desired width */
+    height: 60px; /* Adjust the desired height */
+}
+
+.heart-icon:hover{
+    fill:red;
+}
+
+.filled {
+    fill: red;
+}
+
+#click{
+    font-size: 10px;
+    
+}
+
+
+#decision{
+    font-size: 25px;
+    color: white;
+    font-family: cursive;
+    font-weight: bold;
+    text-align: center;
+    
+}
+#decision-text{
+    font-size: 20px;
+    color: white;
+    font-family: cursive;
+}
