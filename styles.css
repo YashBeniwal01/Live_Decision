@@ -1,0 +1,374 @@
+/* Add this CSS to your styles.css file */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* This ensures that the body takes up at least the full viewport height. */
+}
+
+main {
+    flex-grow: 1; /* Allows the main content to expand and fill the available space. */
+}
+
+
+/* Header Styles */
+header {
+    /*background-color: #FF6B6B;
+    padding: 60px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);*/
+    background-image: url('images/heartWall.webp'); /* Replace 'heartWall.jpg' with the actual image file name and path */
+    background-size: cover;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between; /* Center the logo and buttons horizontally */
+    align-items: center; /* Vertically center the logo and buttons */
+
+}
+
+.logo h1 {
+    color: #fff;
+    font-size: 28px;
+    margin: 0;
+}
+
+/*Header Button style */
+.header-buttons {
+    margin-top: 10px;
+    display: flex;
+}
+
+.register-button, .signin-button {
+    background-color: #fff;
+    color: #FF6B6B;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px; /* Add space between the buttons */
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.register-button:hover, .signin-button:hover {
+    background-color: #FF6B6B;
+    color: #fff;
+}
+
+/* Navigation */
+.navigation {
+    background-color: #333;
+    padding: 1px 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    justify-content: center; 
+}
+
+.nav-links li {
+    margin: 0; 
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 1px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
+/* Content Section Styles */
+.content-section {
+    background-image: url('images/think.jpg'); /* Replace 'heartWall.jpg' with the actual image file name and path */
+    background-size: cover;
+    margin:10px;
+}
+
+.content-box {
+    max-width: 1000px;
+    margin: 0;
+    padding: 20px;    
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.main-heading {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.sub-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-column {
+    width: calc(50% - 20px); /* Adjust the width and spacing as needed */
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.sub-heading {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.sub-text {
+    font-size: 16px;
+    color: #fff;
+}
+
+
+/* Quiz Icons Styles */
+.quiz-icons {
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+    position: relative;
+}
+#quiz-icon-text{
+    font-size: 25px;
+    
+}
+
+#love-quiz{
+    background-image: url('images/hearts2.jpg'); /* Replace 'heartWall.jpg' with the actual image file name and path */
+    background-size: cover;
+}
+
+#friend-quiz{
+    background-image: url('images/friend.jpg'); /* Replace 'heartWall.jpg' with the actual image file name and path */
+    background-size: cover;
+}
+
+#roommate-quiz{
+    background-image: url('images/roomates.jpg'); /* Replace 'heartWall.jpg' with the actual image file name and path */
+    background-size: cover;
+}
+
+#traveling-quiz{
+    background-image: url('images/travel.jpg'); /* Replace 'heartWall.jpg' with the actual image file name and path */
+    background-size: cover;
+}
+
+#career-quiz{
+    background-image: url('images/career.jpg'); /* Replace 'heartWall.jpg' with the actual image file name and path */
+    background-size: cover;
+}
+
+#finance-quiz{
+    background-image: url('images/finance.jpg'); /* Replace 'heartWall.jpg' with the actual image file name and path */
+    background-size: cover;
+}
+
+#mental-quiz{
+    background-image: url('images/mental.jpg'); /* Replace 'heartWall.jpg' with the actual image file name and path */
+    background-size: cover;
+}
+
+#hobby-quiz{
+    background-image: url('images/hobbys.jpg'); /* Replace 'heartWall.jpg' with the actual image file name and path */
+    background-size: cover;
+}
+
+#health-quiz{
+    background-image: url('images/healths.jpg'); /* Replace 'heartWall.jpg' with the actual image file name and path */
+    opacity: 1;
+    background-size: cover;
+}
+
+#personality-quiz{
+    background-image: url('images/personality.webp'); /* Replace 'heartWall.jpg' with the actual image file name and path */
+    background-size: cover;
+}
+
+.quiz-icon {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    transition: transform 0.2s ease;
+    flex-basis: calc(25% - 20px); /* Adjust the width as needed */
+    max-width: 200px;
+    padding: 70px;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}    
+
+.quiz-icon span {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.quiz-icon::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    transition: left 0.2s ease;
+    z-index: -1;
+}
+
+
+.quiz-icon:hover {
+    transform: scale(1.05);
+   
+}
+
+.quiz-icon:hover span {
+    color: #FF6B6B;
+}
+
+.quiz-icon:hover::before {
+    left: 0;
+}
+
+
+
+
+#like-container {
+    background-color: #000; /* Black background color */
+    border-radius: 10px; /* Adjust border radius as needed */
+    padding: 5px; /* Adjust padding as needed */
+    color: white; /* Text color for the heart icon and like count */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.heart-icon {
+    fill: white; /* Set the heart icon to white color */
+    width: 25px; /* Adjust the desired width */
+    height: 25px; /* Adjust the desired height */
+}
+
+#like-count {
+    font-size: 20px; /* Adjust font size as needed */
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .quiz-icons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quiz-icon {
+        flex-basis: calc(50% - 20px); /* Adjust the width as needed for smaller screens */
+    }
+}
+
+
+/*email subscription, email newsletter*/
+.header-subscription-form {
+    border-radius: 5px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+}
+
+.subscription-form {
+    background-color: #360202;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+}
+
+.email-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px 0 0 20px;
+    font-size: 16px;
+    width: 60%;
+    background-color: #deefc0;
+}
+
+.subscribe-button {
+    padding: 10px 20px;
+    background-color: #CC0000;
+    color: #fff;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.subscribe-button:hover {
+    background-color: #581010;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+  
+    align-items: center;
+    justify-content: center; 
+   
+}
+
+.social-icons {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons li a img {
+    width: 30px;
+    height: 30px;
+}
