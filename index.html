@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Decision</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Live Decision Quiz</h1>
+        </div>
+     <!--   <div class="header-buttons">
+            <button class="register-button">Register</button>
+            <button class="signin-button">Sign In</button>
+        </div> -->
+
+        <div class="header-subscription-form">
+            <input class="email-input" type="email" placeholder="Enter your email">
+            <button class="subscribe-button">Subscribe</button>
+        </div>
+        
+    </header>
+
+    <nav class="navigation">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#footer">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+
+        <section class="content-section">
+            <div class="content-box">
+                <h2 class="main-heading">How to check Relationship is Good or not!</h2>
+                <div class="sub-columns">
+                    <div class="sub-column">
+                        <h3 class="sub-heading">1. Choose one of the following option</h3>
+                        <p class="sub-text">Click below in which relation you are in and 
+                            you want to check. how hygenic your relationship is.
+                        </p>
+                    </div>
+                    <div class="sub-column">
+                        <h3 class="sub-heading">2. Attempt Quiz and Check Relationship</h3>
+                        <p class="sub-text">Answer the questions and what is your relationship status, whether
+                            you're fit in relationship or not.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+    <main id = "home">
+        <div class="quiz-icons">
+            <a href="Love_quiz/lovequiz.html" class="quiz-icon" id="love-quiz">
+                <span id="quiz-icon-text">Love Quiz</span>
+                    <div id="like-container">
+                    <svg class="heart-icon" id="heart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" onclick="like()">
+                    <path class="blank" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill = "white"/>
+                </svg>
+                <span id="like-count">0</span>
+                    </div>
+            </a>
+
+            <a href="friendquiz/friend.html" class="quiz-icon" id="friend-quiz">
+                <span id="quiz-icon-text">Friend Quiz</span>
+                <div id="like-container">
+                    <svg class="heart-icon" id="heart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" onclick="like()">
+                    <path class="blank" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill = "white"/>
+                </svg>
+                <span id="friend-like-count">0</span>
+                    </div>
+            </a>
+
+            <a href="roommatequiz/roommate.html" class="quiz-icon" id="roommate-quiz">
+                <span id="quiz-icon-text">Roommate Quiz</span>
+                <div id="like-container">
+                    <svg class="heart-icon" id="heart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" onclick="like()">
+                    <path class="blank" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill = "white"/>
+                </svg>
+                <span id="roommate-like-count">0</span>
+                    </div>
+            </a>
+
+            <a href="travellingquiz/travel.html" class="quiz-icon" id="traveling-quiz">
+                <span id="quiz-icon-text">Traveling Quiz</span>
+                <div id="like-container">
+                    <svg class="heart-icon" id="heart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" onclick="like()">
+                    <path class="blank" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill = "white"/>
+                </svg>
+                <span id="travel-like-count">0</span>
+                    </div>
+            </a>
+
+            <a href="careerquiz/career.html" class="quiz-icon" id="career-quiz">
+                <span id="quiz-icon-text">Career Quiz</span>
+                <div id="like-container">
+                    <svg class="heart-icon" id="heart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" onclick="like()">
+                    <path class="blank" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill = "white"/>
+                </svg>
+                <span id="career-like-count">0</span>
+                    </div>
+            </a>
+
+            <a href="healthquiz/health.html" class="quiz-icon" id="health-quiz">
+                <span id="quiz-icon-text">Health& Wellness</span>
+                <div id="like-container">
+                    <svg class="heart-icon" id="heart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" onclick="like()">
+                    <path class="blank" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill = "white"/>
+                </svg>
+                <span id="health-like-count">0</span>
+                    </div>
+            </a>
+            <a href="personalityquiz/personality.html" class="quiz-icon" id="personality-quiz">
+                <span id="quiz-icon-text">Personality Type Quiz</span>
+                <div id="like-container">
+                    <svg class="heart-icon" id="heart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" onclick="like()">
+                    <path class="blank" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill = "white"/>
+                </svg>
+                <span id="personality-like-count">0</span>
+                    </div>
+            </a>
+
+            <a href="mentalquiz/mental.html" class="quiz-icon" id="mental-quiz">
+                <span id="quiz-icon-text">Mental Health and Wellbeing</span>
+                <div id="like-container">
+                    <svg class="heart-icon" id="heart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" onclick="like()">
+                    <path class="blank" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill = "white"/>
+                </svg>
+                <span id="mental-like-count">0</span>
+                    </div>
+            </a>
+
+            <a href="hobbyquiz/hobby.html" class="quiz-icon" id="hobby-quiz">
+                <span id="quiz-icon-text">Hobby and Interest</span>
+                <div id="like-container">
+                    <svg class="heart-icon" id="heart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" onclick="like()">
+                    <path class="blank" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill = "white"/>
+                </svg>
+                <span id="hobby-like-count">0</span>
+                    </div>
+            </a>
+
+            <a href="financequiz/finance.html" class="quiz-icon" id="finance-quiz">
+                <span id="quiz-icon-text">Financial Literacy</span>
+                <div id="like-container">
+                    <svg class="heart-icon" id="heart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" onclick="like()">
+                    <path class="blank" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill = "white"/>
+                </svg>
+                <span id="finance-like-count">0</span>
+                    </div>
+            </a>
+           
+        </div>
+            <!--Email Newsletter box-->
+            <div class="subscription-form">
+                <h2>Subscribe our Newsletter for getting Updates for your Decisions:</h2>
+                <input class="email-input" type="email" placeholder="Enter your email">
+                <button class="subscribe-button">Subscribe</button>
+            </div>
+
+    </main>
+    <!-- Rest of your website content here -->
+    <footer>
+        <div class="footer-content" id = "footer">
+            <div class="content-box">
+                <h2 class="main-heading">About Us</h2>
+                <p class="sub-text">Welcome to LiveDecision.com, your go-to destination for making informed decisions about your relationships.</p>
+                <p class="sub-text">We understand that relationships can be complex and sometimes challenging. Our mission is to provide you with the tools and knowledge to assess your relationships and make decisions that are right for you.</p>
+                <p class="sub-text">Our team of experts has designed a series of quizzes and questionnaires that can help you gain insights into various aspects of your relationships, whether it's about love, friendship, or other life areas. Our interactive quizzes are fun, informative, and designed to provide you with valuable insights.</p>
+                <p class="sub-text">At LiveDecision.com, we value your privacy and data security. Rest assured that any information you provide during our quizzes is kept confidential. We are committed to helping you navigate your relationships with confidence.</p>
+                <p class="sub-text">Thank you for choosing LiveDecision.com as your trusted source for relationship insights. Feel free to explore our quizzes and get the answers you need to make informed decisions about your relationships.</p>
+                <p style="font-weight: bolder;">&copy; 2023 LiveDecision.com</p>
+
+            <section id="contact" class="content-section">
+                
+                    <h2 class="main-heading">Contact Us</h2>
+                    <p class="sub-text">We value your feedback and are here to assist you with any questions or concerns you may have. Feel free to reach out to us through the following channels:</p>
+                    <ul class="contact-info">
+                        <li><strong>Email:</strong> contact@LiveDecision.com</li>
+                        <li><strong>Phone:</strong> +1 (123) 456-7890</li>
+                    </ul>
+                    <p class="sub-text">Our support team is available during business hours to address your inquiries and provide assistance. Whether you have technical questions, suggestions for improvements, or if you just want to say hello, we'd love to hear from you!</p>
+                    <p class="sub-text">You can also stay updated with our latest quizzes and updates by subscribing to our newsletter. Enter your email in the subscription box, and we'll keep you informed.</p>
+                
+            </section>  
+
+            </div>
+            
+        </div>
+    </footer>
+
+        <!-- Include Font Awesome for the heart icon -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src = "script.js"></script>
+    <script>
+     /* Like function for like quiz */
+            function updateLikeCount(likeCount) {
+                const likeCountElement = document.getElementById("like-count");
+                likeCountElement.textContent = likeCount  // Add " Likes"
+            }
+
+            // Set the initial like count (you can retrieve it from Local Storage)
+            const initialLikeCount = parseInt(localStorage.getItem("likeCount")) || 0;
+            updateLikeCount(initialLikeCount);
+    /* Like function for friendship quiz */
+             function updateFriendLikeCount(friendLikeCount) {
+                const likeCountElement = document.getElementById("friend-like-count");
+                likeCountElement.textContent = friendLikeCount  // Add " Likes"
+            }
+
+            // Set the initial like count (you can retrieve it from Local Storage)
+            const initialFriendLikeCount = parseInt(localStorage.getItem("friendLikeCount")) || 0;
+            updateFriendLikeCount(initialFriendLikeCount);
+
+    /* Like function for travelling quiz */
+    function updateTravelLikeCount(travelLikeCount) {
+                const likeCountElement = document.getElementById("travel-like-count");
+                likeCountElement.textContent = travelLikeCount  // Add " Likes"
+            }
+
+            // Set the initial like count (you can retrieve it from Local Storage)
+            const initialTravelLikeCount = parseInt(localStorage.getItem("travelLikeCount")) || 0;
+            updateTravelLikeCount(initialTravelLikeCount);
+
+
+    /* Like function for career quiz */
+            function updateCareerLikeCount(careerLikeCount) {
+                const likeCountElement = document.getElementById("career-like-count");
+                likeCountElement.textContent = careerLikeCount  // Add " Likes"
+            }
+
+            // Set the initial like count (you can retrieve it from Local Storage)
+            const initialCareerLikeCount = parseInt(localStorage.getItem("careerLikeCount")) || 0;
+            updateCareerLikeCount(initialCareerLikeCount);
+
+     /* Like function for Health and wellness quiz */
+     function updateHealthLikeCount(healthLikeCount) {
+                const likeCountElement = document.getElementById("health-like-count");
+                likeCountElement.textContent = healthLikeCount  // Add " Likes"
+            }
+
+            // Set the initial like count (you can retrieve it from Local Storage)
+            const initialHealthLikeCount = parseInt(localStorage.getItem("healthLikeCount")) || 0;
+            updateHealthLikeCount(initialHealthLikeCount);
+    
+    /* Like function for Personality quiz */
+    function updatePersonalityLikeCount(personalityLikeCount) {
+                const likeCountElement = document.getElementById("personality-like-count");
+                likeCountElement.textContent = personalityLikeCount  // Add " Likes"
+            }
+
+            // Set the initial like count (you can retrieve it from Local Storage)
+            const initialpersonalityLikeCount = parseInt(localStorage.getItem("personalityLikeCount")) || 0;
+            updatePersonalityLikeCount(initialpersonalityLikeCount);
+
+    /* Like function for Roommate quiz */
+    function updateRoommateLikeCount(roommateLikeCount) {
+                const likeCountElement = document.getElementById("roommate-like-count");
+                likeCountElement.textContent = roommateLikeCount  // Add " Likes"
+            }
+
+            // Set the initial like count (you can retrieve it from Local Storage)
+            const initialRoommateLikeCount = parseInt(localStorage.getItem("roommateLikeCount")) || 0;
+            updateRoommateLikeCount(initialRoommateLikeCount);
+
+    /* Like function for Metnal health quiz */
+    function updateMentalLikeCount(mentalLikeCount) {
+                const likeCountElement = document.getElementById("mental-like-count");
+                likeCountElement.textContent = mentalLikeCount  // Add " Likes"
+            }
+
+            // Set the initial like count (you can retrieve it from Local Storage)
+            const initialMentalLikeCount = parseInt(localStorage.getItem("mentalLikeCount")) || 0;
+            updateMentalLikeCount(initialMentalLikeCount);
+
+    /* Like function for Hobby quiz */
+    function updateHobbyLikeCount(hobbyLikeCount) {
+                const likeCountElement = document.getElementById("hobby-like-count");
+                likeCountElement.textContent = hobbyLikeCount  // Add " Likes"
+            }
+
+            // Set the initial like count (you can retrieve it from Local Storage)
+            const initialHobbyLikeCount = parseInt(localStorage.getItem("hobbyLikeCount")) || 0;
+            updateHobbyLikeCount(initialHobbyLikeCount);
+
+     /* Like function for Finance quiz */
+     function updateFinanceLikeCount(financeLikeCount) {
+                const likeCountElement = document.getElementById("finance-like-count");
+                likeCountElement.textContent = financeLikeCount  // Add " Likes"
+            }
+
+            // Set the initial like count (you can retrieve it from Local Storage)
+            const initialFinanceLikeCount = parseInt(localStorage.getItem("financeLikeCount")) || 0;
+            updateFinanceLikeCount(initialFinanceLikeCount);
+
+
+    </script>
+
+</body>
+</html>
